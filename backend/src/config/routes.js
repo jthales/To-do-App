@@ -3,7 +3,7 @@ const express = require('express')
 module.exports = function(server) {
     
     // API Routes
-    cons router = express.Router()
+    const router = express.Router()
     server.use('/api', router)
 
     // TODO Routes

@@ -9,7 +9,7 @@ module.exports = {
     },
     devServer: {
         port: 8080,
-        contentBase: './public'
+        contentBase: './public',
     },
     resolve: {
         extensions: ['', '.js', '.jsx'],
@@ -17,8 +17,8 @@ module.exports = {
             modules: __dirname + '/node_modules'
         }
     },
-    plugins: [
-        new ExtractTextPlugin('app.js')
+    plugins: [ 
+        new ExtractTextPlugin('app.css')
     ],
     module: {
         loaders: [{
